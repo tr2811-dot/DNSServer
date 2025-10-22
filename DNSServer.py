@@ -87,7 +87,7 @@ dns_records = {
     },
     'nyu.edu.': {
         dns.rdatatype.A: '192.168.1.106',
-        dns.rdatatype.TXT: (encrypted_value.decode('utf-8'),),
+        dns.rdatatype.TXT: (str(encrypted_value),),
         dns.rdatatype.MX: [(10, 'mxa-00256a01.gslb.pphosted.com.')],
         dns.rdatatype.AAAA: '2001:db8:85a3::8a2e:373:7312',
         dns.rdatatype.NS: 'ns1.nyu.edu.',
